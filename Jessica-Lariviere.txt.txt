@@ -1,0 +1,93 @@
+  Codepen:  https://codepen.io/Jessixdanielle/pen/mdrebap?editors=0100
+
+	1. What is Semantic HTML?
+		It is tagging that gives meaning and context
+    
+	2. What is HTML used for? 
+		it is used to mark up the written part of a website
+   
+	3. What is an attribute and where do we put it? 
+		an attribute is used to define things about the tag, and it goes inside 			the tag you're trying to define
+	
+	4. What is the h1 tag used for? How many times should I use it on a page?
+    		It is used to make th emost important header on the page, and should be 		only used once.
+	5. Name two tags that have required attributes
+    		a tag, and img
+	6. What do we put in the head of our HTML document? 
+    	boiler plate with doctype 
+	7. What is an id? 
+    		an id is a attribute that marks a tag with the id name, only one thing 				per id name
+	8. What elements can I add an id to? 
+    		Any
+	9. How many times can I use the same id on a page? 
+    		Once
+	10. What is a class? 
+    		a class is an attribute that can be used multiple times in a page to 		group similar things together so you can more easily style similar things 		in a way specific to only that group
+	11. What elements can I add a class to? 
+    		any
+	12. How many times can I use the same class on a page? 
+    		As many as you want
+	13. How do I get my link to open in a new tab?
+    		target="_blank" after the href
+	14. What is the alt attribute in the image tag used for? 
+    		a discripion in case it doesnt load/to make it more accessible 
+	15. How do I reference an id?
+    		in css an id is #idname
+	16. What is the difference between a section and a div
+    		They're the same, except section is semantic.
+	17. What is CSS used for? 
+    		To style a webpage
+	18. How to we select an element? Example - every h2 on the page
+    		h2{}
+	19. What is the difference between a class and an id? - Give me an example of 	when I might use each one
+    		class can be used many times, id only once per name. Id if you need 		something to be extra specific and only apply to that one thing. class if 		you want it to apply to multiple
+	20. How do we select classes in CSS?
+    		.classname		
+	21. How do we select a p element with a single class of “human””?
+    		.human or p .human
+	22. What is a parent child selector? When would this be useful? 
+    		with selecting with > and styling lists for example
+	23. How do you select all links within a div with the class of sidebar?
+    		a div .sidebar
+	24. What is a pseudo selector?
+    		selects elements in a certain state
+	25. What do we use the change the spacing between lines?
+    	line-height
+	26. What do we use to change the spacing between letters?
+    	letter-spacing
+	27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    	text-transform: Uppercase; lowercase; capitalize
+	28. How do I add a 1px border around my div that is dotted and black?
+    	border: 1px dotted black;
+	29. How do I select everything on the page? 
+    	*{}
+	30. How do I write a comment in CSS?
+    	/* */
+	31. How do I find out what file I am in, when I am using the command line? 
+    	pwd
+	32. Using the command line - how do I see a list of files/folders in my current folder?
+	ls
+	33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    	rm and because it wont ask for verification itll jsut delete
+	34. Why should I use version control? 
+    	so teams could work at same time without messing each other up 
+	35. How often should I commit to github?
+    	after any major changes, or over a set amount of time like 30 min
+	36. What is the command we would use to push our repo up to github? 
+    	git push -u origin branch-name
+	37. Walk me through Lambda's git flow. 
+		step 1 is fork the repo. step 2 is to clone it by going to github and after forking click the green code button and in the drop down you will have an option to clone. keep it set to html and copy the link. step 3 take the clone link and go to bash. once in bash you are going to go into the dir you want the code downloaded to and then type git clone and then paste the link and hit enter. step 4 cd into the newly created repo using cd <repo name>. step 5 use git checkout -b first-lastname to create a new branch. step 6 when done you can commit by first using the command git add . to add the repo changes, git commit -m 'your commit message' step 7 push to github repo with git push -u origin branch-name (branch-name is the same name you set up on the checkout -b step). final step is to submit a pull request to your forked copy NOT THE ORIGINAL LAMBDA ONE. make sure when on the pull request page to click the dropdown box in the top left and make sure to select your forked repo with your name on it. then simply click creat pull request
+
+Stretch Questions
+
+   	 1. What is the difference between an inline element and a block element?
+	 inline will sit inline with other elements, block element will take up whole width and put everything else on next line
+	
+	2. What happens when an element is positioned absolutely? 
+   	 element is positions relative to first positioned parent
+	3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+   	 display inline block
+	4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+   	 paragraph, h1, table,    button, break     img
+	5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+flex box
